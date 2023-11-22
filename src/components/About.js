@@ -75,7 +75,7 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="  mt-16 mx-auto transform translate-x-1/2 lg:absolute lg:right-1/2 lg:bottom-12 animate-bounce">
+        <div className="  mt-16 mx-auto transform translate-x-1/2 md:absolute md:right-1/2 md:bottom-12 animate-bounce">
           <ScrollDown targetSection="#about-me" className="ml-3" />
         </div>
       </div>

@@ -31,10 +31,10 @@ export default function AboutMe(params) {
   return (
     <section className="py-6 " id="about-me">
       <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
-        <h1 className="text-3xl font-bold max-w-2xl mb-12 p-2 text-white">
-          About Me
-        </h1>
-        <div className="fade-in-about grid grid-cols-1  border-t pt-10 sm:max-w-2xl lg:max-w-full md:grid-cols-2 gap-8 space-x-4 ">
+        <div class="mx-auto max-w-2xl ">
+          <h1 class="text-3xl font-bold text-white sm:text-4xl  ">About me</h1>
+        </div>
+        <div className=" mx-auto mt-10 fade-in-about grid grid-cols-1  border-t pt-10 max-w-2xl lg:max-w-full lg:mx-0 md:grid-cols-2 gap-x-8 gap-y-16 sm:mt-16 space-x-4 ">
           <div className="md:order-1 lg:w-full lg:h-2/3 sm:w-1/2  sm:mx-auto">
             <img
               className="object-cover w-full h-full rounded-md shadow-lg"
