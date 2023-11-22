@@ -97,7 +97,7 @@ export default function Navbar() {
               className="text-white hover:text-white"
             >
               {isOpen ? (
-                <MdClose className="w-6 h-6" />
+                <MdClose className="w-6 h-6  opacity-0" />
               ) : (
                 <MdMenu className="w-6 h-6" />
               )}
@@ -106,46 +106,47 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1  w-1/6 ">
+        <div className="fixed  inset-0 bg-gray-800 bg-opacity-75 md:hidden">
+          <div className="flex justify-end p-4">
+            <button onClick={toggleMenu} className="text-white">
+              <MdClose className="w-6 h-6" />
+            </button>
+          </div>
+          <div className="flex flex-col items-start space-y-4 p-4">
             <Link
               to="/home"
-              onClick={() => handleScrollToSection("/")}
-              className="text-white block px-3 py-2 rounded-md cursor-pointer  text-base   hover:scale-105 hover:transition-transform  font-medium hover:text-white"
+              onClick={() => handleScrollToSection("home")}
+              className="text-white text-xl  hover:text-gray-300 hover:scale-105"
             >
               Home
             </Link>
             <Link
-              href="/about-me"
+              to="/about-me"
               onClick={() => handleScrollToSection("about-me")}
-              className="text-white block px-3 py-2 rounded-md cursor-pointer text-base  hover:transition-transform  hover:scale-105  font-medium hover:text-white"
+              className="text-white text-xl hover:text-gray-300"
             >
               About
             </Link>
             <Link
-              href="/works"
+              to="/works"
               onClick={() => handleScrollToSection("projects")}
-              className="text-white block px-3 py-2 rounded-md cursor-pointer text-base hover:scale-105 hover:transition-transform font-medium hover:text-white"
+              className="text-white text-xl hover:text-gray-300"
             >
               Projects
             </Link>
             <Link
-              href="/contact"
+              to="/contact"
               onClick={() => handleScrollToSection("contact")}
-              className="text-white block px-3 py-2 rounded-md cursor-pointer text-base  hover:scale-105  hover:transition-transform font-medium hover:text-white"
+              className="text-white text-xl hover:text-gray-300"
             >
               Contact
             </Link>
-            <div className="bg-none md:w-1/2 sm:w-1/2 rounded-sm">
-              <div className="sm:hidden px-2 rounded-sm">
-                <button
-                  onClick={handleDownloadResume}
-                  className="text-white hover:text-white hover:scale-105 hover:border-white hover:border px-1 flex items-center"
-                >
-                  Resume <MdDownload className="ml-2" />
-                </button>
-              </div>
-            </div>
+            <button
+              onClick={handleDownloadResume}
+              className="text-white text-xl  hover:text-gray-300"
+            >
+              Resume <MdDownload className="inline-block" />
+            </button>
           </div>
         </div>
       )}

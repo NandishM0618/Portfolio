@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     title: "Event WebApp",
-    image: "./images/event.png",
+    image: "./images/event - Copy.png",
     desc: "An event webpage project is a digital platform created to provide information, registration, and engagement opportunities for a specific event or gathering. It serves as an online hub for all aspects related to the event.",
     link: "https://github.com/Eisenberg0618/eventon",
     date: "April 2023",

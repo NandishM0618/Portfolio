@@ -75,8 +75,8 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center items-center absolute bottom-5 right-1/2 transform translate-x-1/2 animate-bounce">
-          <ScrollDown targetSection="#about-me" />
+        <div className="  mt-16 mx-auto transform translate-x-1/2 lg:absolute lg:right-1/2 lg:bottom-12 animate-bounce">
+          <ScrollDown targetSection="#about-me" className="ml-3" />
         </div>
       </div>
     </>

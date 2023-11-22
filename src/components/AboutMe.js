@@ -29,7 +29,7 @@ export default function AboutMe(params) {
   }, []);
 
   return (
-    <section className="min-h-screen py-6 " id="about-me">
+    <section className="py-6 " id="about-me">
       <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
         <h1 className="text-3xl font-bold max-w-2xl mb-12 p-2 text-white">
           About Me
@@ -44,7 +44,7 @@ export default function AboutMe(params) {
           </div>
           {/* https://prompti.ai/wp-content/uploads/2023/07/pcboi2.png */}
           <div className="md:order-2 sm:px-4 ">
-            <div className="text-justify md:text-left">
+            <div className="text-left md:text-left">
               <p className="text-white leading-relaxed sm:text-left">
                 <span className=" text-2xl">Hi There!, I'm Nandish M</span>
                 <br />

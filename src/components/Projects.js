@@ -31,7 +31,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="works" className="text-gray-900 py-6 min-h-screen">
+    <section id="works" className="text-gray-900 py-6">
       <div class="mx-auto max-w-7xl px-6 mt-10 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
           <h2 class="text-3xl font-bold text-white sm:text-4xl">My Works</h2>
