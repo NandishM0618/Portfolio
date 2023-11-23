@@ -29,7 +29,7 @@ export default function Footer(params) {
   return (
     <>
       <div
-        className="  lg:max-w-[1400px] lg:h-[600px] md:max-w-full mx-auto group flex flex-col justify-evenly items-center relative select-none px-4 sm:max-w-full sm:flex-cols bg-black/50"
+        className="mt-10 lg:max-w-[1400px] lg:h-[600px] md:max-w-full mx-auto group flex flex-col justify-evenly items-center relative select-none px-4 sm:max-w-full sm:flex-cols bg-black/50"
         id="footer"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

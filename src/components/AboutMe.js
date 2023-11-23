@@ -66,7 +66,7 @@ export default function AboutMe(params) {
                   <GrInstagram />
                 </a>
                 <a
-                  href="https://github.com/nandishm"
+                  href="https://github.com/NandishM0618"
                   className="text-white text-xl border border-white rounded-full p-2  hover:bg-white hover:text-black  hover:scale-105 hover:border-black transition-transform"
                 >
                   <GrGithub />

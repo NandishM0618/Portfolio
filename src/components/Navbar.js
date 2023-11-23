@@ -106,7 +106,7 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="fixed  inset-0 bg-gray-800 bg-opacity-75 md:hidden">
+        <div className="fixed  inset-0 bg-gray-800 bg-opacity-80 md:hidden">
           <div className="flex justify-end p-4">
             <button onClick={toggleMenu} className="text-white">
               <MdClose className="w-6 h-6" />

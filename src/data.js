@@ -27,7 +27,7 @@ export const projects = [
     image:
       "https://mir-s3-cdn-cf.behance.net/projects/404/2d9bd2171457723.Y3JvcCwxNDE1LDExMDYsMCww.png",
     desc: "InShorts Clone: A concise news app delivering bite-sized, unbiased news snippets across diverse categories for users on the go. Stay informed with succinct updates tailored to your interests.",
-    link: "github.com",
+    link: "https://github.com/NandishM0618/Inshorts-clone",
     date: "July 2023",
   },
 ];
