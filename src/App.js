@@ -9,6 +9,7 @@ import { Element } from "react-scroll";
 import { useEffect } from "react";
 import BacktoTop from "./components/BacktoTop";
 import AboutMe from "./components/AboutMe";
+import { Experience } from "./components/Experience";
 
 function App() {
   useEffect(() => {
@@ -52,6 +53,11 @@ function App() {
         <div className="animate-scroll">
           <Element name="about-me">
             <AboutMe />
+          </Element>
+        </div>
+        <div className="animate-scroll">
+          <Element name="experience">
+            <Experience />
           </Element>
         </div>
         <div className="animate-scroll">

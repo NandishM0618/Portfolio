@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 export default function Projects() {
   useEffect(() => {
-    const projectsSection = document.querySelector(".fade-in");
+    const projectsSection = document.querySelector(".fade-in-projects");
 
     const options = {
       root: null,
@@ -36,7 +36,7 @@ export default function Projects() {
         <div class="mx-auto max-w-2xl lg:mx-0">
           <h1 class="text-3xl font-bold text-white sm:text-4xl">My Works</h1>
         </div>
-        <div class="mx-auto fade-in mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  border-t pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div class="fade-in-projects mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  border-t pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {projects.map((item) => {
             return (
               <>
@@ -74,8 +74,13 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="relative mt-8 flex items-center gap-x-4">
+                    <Link to={item.liveLink} target=" _blank">
+                      <button className="px-4 w-120  inline-flex flex-row py-2 text-white bg-none border border-white rounded-md transition duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800 hover:shadow-md">
+                        See Live
+                      </button>
+                    </Link>
                     <Link to={item.link} target=" _blank">
-                      <button className="px-4 w-120  inline-flex flex-row py-2 text-gray-600 bg-white rounded-md transition duration-300 transform hover:scale-105 hover:bg-black/40 hover:text-white hover:shadow-md">
+                      <button className="px-4 w-120  inline-flex flex-row py-2 text-gray-600 bg-white rounded-md transition duration-300 transform hover:bg-black/40 hover:text-white hover:shadow-md">
                         GitHub <MdNavigateNext className=" mt-1 ml-2" />
                       </button>
                     </Link>

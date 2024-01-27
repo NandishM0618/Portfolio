@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function AboutMe(params) {
   useEffect(() => {
-    const AboutSection = document.querySelector(".fade-in-about");
+    const AboutSection = document.querySelector(".fade-in");
 
     const options = {
       root: null,
@@ -29,28 +29,27 @@ export default function AboutMe(params) {
   }, []);
 
   return (
-    <section className="py-6 " id="about-me">
+    <section id="about-me" className="py-8">
       <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl ">
-          <h1 class="text-3xl font-bold text-white sm:text-4xl  ">About me</h1>
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h1 className="text-3xl font-bold text-white sm:text-4xl">
+            About Me
+          </h1>
         </div>
-        <div className=" mx-auto mt-10 fade-in-about grid grid-cols-1  border-t pt-10 max-w-2xl lg:max-w-full lg:mx-0 md:grid-cols-2 gap-x-8 gap-y-16 sm:mt-16 space-x-4 ">
-          <div className="md:order-1 lg:w-full lg:h-2/3 sm:w-1/2  sm:mx-auto">
+        <div className=" mx-auto mt-10 fade-in grid grid-cols-1  border-t pt-10 max-w-2xl lg:max-w-full lg:mx-0 md:grid-cols-2 gap-x-8 gap-y-16 sm:mt-16 space-x-4 ">
+          <div className="md:order-1 sm:mx-auto">
             <img
-              className="object-cover w-full h-full rounded-md shadow-lg"
-              src="https://img.freepik.com/premium-vector/programming-coding-icon-set-software-development-icon-collection-programmer-developer-symbol_745851-79.jpg"
+              className="object-cover mx-auto rounded-md shadow-lg"
+              src="https://i.pinimg.com/236x/e4/75/aa/e475aa6fb00ccf5ec42919c3475ca002.jpg"
               alt="about-img"
             />
           </div>
-          {/* https://prompti.ai/wp-content/uploads/2023/07/pcboi2.png */}
           <div className="md:order-2 sm:px-4 ">
             <div className="text-left md:text-left">
               <p className="text-white leading-relaxed sm:text-left">
                 <span className=" text-2xl">Hi There!, I'm Nandish M</span>
                 <br />
-                <span className="space-y-10 text-yellow-400">
-                  A Full Stack Developer
-                </span>
+                <span className=" text-yellow-400">A Full Stack Developer</span>
                 <br />
                 Passionate full-stack developer with expertise in both front-end
                 and back-end technologies. Proficient in creating robust and
