@@ -39,7 +39,7 @@ export default function Navbar() {
     };
   }, []);
   const handleDownloadResume = () => {
-    const resumeUrl = "https://nandishm.netlify.app/NandishResume.pdf";
+    const resumeUrl = "https://nandishm.netlify.app/NandishmResume.pdf";
 
     const link = document.createElement("a");
     link.href = resumeUrl;
