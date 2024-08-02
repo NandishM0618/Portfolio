@@ -127,7 +127,8 @@ export default function Footer(params) {
           </section>
         </div>
         <p className="tracking-wide text-white text-center mt-4">
-          &copy; 2023 - All rights reserved. Designed and Developed by Nandish M
+          &copy; 2024 - All rights reserved. Designed and Developed by{" "}
+          <span className="font-bold">Nandish M</span>
         </p>
       </div>
     </>

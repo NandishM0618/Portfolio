@@ -1,9 +1,10 @@
 export const projects = [
   {
     title: "E-commerce Website",
-    image: "./images/e-comm.png",
+    image: "./images/ecomm.png",
     desc: "A full-stack e-commerce platform developed using the MERN stack. It includes features such as user authentication, product management, shopping cart functionality, and order processing.",
     link: "https://github.com/NandishM0618/E-commerce/",
+    liveLink: "https://ecomm-shopio.vercel.app/",
     date: "August 2023",
   },
   {
@@ -16,17 +17,26 @@ export const projects = [
   },
 
   {
-    title: "Blog Website",
-    image: "./images/blog.png",
+    title: "Real time Collaborative Coding Platform",
+    image: "./images/real-code.png",
     desc: "Blog Website: Explore a diverse world of engaging articles and stories. Immerse yourself in thought-provoking content curated for every passion and interest. Your go-to platform for inspiration, information, and endless discovery.",
     link: "https://github.com/NandishM0618/blog-app",
+    liveLink: "https://collabcoe-ui.vercel.app/",
     date: "May 2023",
+  },
+  {
+    title: "Task Management System",
+    image: "./images/taskie.png",
+    desc: "The Task Management System is a comprehensive tool designed to help teams efficiently manage their tasks, collaborate effectively, and track progress towards their goals. ",
+    link: "https://github.com/NandishM0618/ReactCreations/tree/main/chat-app",
+    date: "December 2023",
   },
   {
     title: "Space Exploration Dashboard",
     image: "./images/Space_Exploration.png",
     desc: "The Space Exploration Dashboard! This project provides a real-time view of Earth events and space launches, allowing users to stay updated on the latest happenings in the cosmos.",
     link: "https://github.com/NandishM0618/spaceExplorationDashboard/",
+    liveLink: "https://mern-space.onrender.com/",
     date: "November 2023",
   },
   {

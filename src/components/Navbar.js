@@ -9,6 +9,7 @@ import { MdDownload } from "react-icons/md";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,6 +19,13 @@ export default function Navbar() {
       duration: 500,
       smooth: true,
     });
+  };
+  const handleResume = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -83,12 +91,36 @@ export default function Navbar() {
               </Link>
               <div className=" border border-white  bg-none rounded-sm">
                 <button
-                  onClick={handleDownloadResume}
+                  onClick={handleResume}
                   className="text-white hover:text-black hover:bg-white px-2  flex items-center "
                 >
                   Resume <MdDownload className="ml-2" />
                 </button>
               </div>
+              {isModalOpen && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-30">
+                  <div className="bg-white p-6 rounded-md shadow-md">
+                    <h2 className="text-xl text-black font-semibold mb-4">
+                      Resume Overview
+                    </h2>
+                    <p className="mb-4 text-gray-800">
+                      Here you can find an overview of the resume...
+                    </p>
+                    <button
+                      onClick={handleDownloadResume}
+                      className="bg-blue-500 text-white px-4 py-2 rounded-md mr-2"
+                    >
+                      Download
+                    </button>
+                    <button
+                      onClick={handleCloseModal}
+                      className="bg-gray-500 text-white px-4 py-2 rounded-md"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="md:hidden">

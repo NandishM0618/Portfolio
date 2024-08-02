@@ -74,11 +74,20 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="relative mt-8 flex items-center gap-x-4">
-                    <Link to={item.liveLink} target=" _blank">
-                      <button className="px-4 w-120  inline-flex flex-row py-2 text-white bg-none border border-white rounded-md transition duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800 hover:shadow-md">
+                    {item.liveLink ? (
+                      <Link to={item.liveLink} target=" _blank">
+                        <button className="px-4 w-120  inline-flex flex-row py-2 text-white bg-none border border-white rounded-md transition duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800 hover:shadow-md">
+                          See Live
+                        </button>
+                      </Link>
+                    ) : (
+                      <button
+                        disabled
+                        className="px-4 w-120 inline-flex flex-row py-2 text-white bg-none border border-white rounded-md transition duration-300 transform cursor-not-allowed opacity-50"
+                      >
                         See Live
                       </button>
-                    </Link>
+                    )}
                     <Link to={item.link} target=" _blank">
                       <button className="px-4 w-120  inline-flex flex-row py-2 text-gray-600 bg-white rounded-md transition duration-300 transform hover:bg-black/40 hover:text-white hover:shadow-md">
                         GitHub <MdNavigateNext className=" mt-1 ml-2" />

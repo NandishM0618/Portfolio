@@ -4,7 +4,7 @@ export const Experience = () => {
     {
       company: "Baymap Systems",
       position: "Front-End Web Developer",
-      period: "Dec 2023 - Present",
+      period: "Dec 2023 - Feb 2024",
       description:
         "As the Front-End Web Developer at Baymap Systems, I play a pivotal role in crafting an impactful and visually stunning online presence for the company through the development of official website.",
     },

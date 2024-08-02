@@ -51,11 +51,14 @@ export default function AboutMe(params) {
                 <br />
                 <span className=" text-yellow-400">A Full Stack Developer</span>
                 <br />
-                Passionate full-stack developer with expertise in both front-end
-                and back-end technologies. Proficient in creating robust and
-                scalable web applications, combining a strong foundation in
-                programming with a keen eye for user experience. Dedicated to
-                continuous learning and staying abreast of industry trends.
+                <span className=" align-middle text-justify">
+                  Passionate full-stack developer with expertise in both
+                  front-end and back-end technologies. Proficient in creating
+                  robust and scalable web applications, combining a strong
+                  foundation in programming with a keen eye for user experience.
+                  Dedicated to continuous learning and staying abreast of
+                  industry trends.
+                </span>
               </p>
               <div className="mt-5 sm:w-full flex space-x-6 sm:mx-auto">
                 <a
